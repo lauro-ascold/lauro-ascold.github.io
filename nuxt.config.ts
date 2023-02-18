@@ -3,8 +3,8 @@ export default defineNuxtConfig({
   alias: {
     // "~~": "/<rootDir>",
     // "@@": "/<rootDir>",
-    "~": "/",
-    "@": "/",
+    "~": "",
+    "@": "",
     "assets": "/",
     "public": "/public"
   },
@@ -27,14 +27,11 @@ export default defineNuxtConfig({
       }
     }
   },
-  css: [
-    // 'element-plus/dist/index.css'
-  ],
   vite: {
     css: {
       preprocessorOptions: {
         scss: {
-          additionalData: '@use "assets/index.scss" as *;'
+          additionalData: '@use "assets/css/mixin.scss" as *;@use "assets/css/variables.scss" as *;'
         }
       }
     }
