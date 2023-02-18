@@ -13,7 +13,7 @@ export default {
 }
 </script>
 <style>
-@import "@/assets/common.scss";
+@import "/assets/common.scss";
 </style>
 <style lang="scss" scoped>
 .page-root {

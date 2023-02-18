@@ -3,10 +3,10 @@ export default defineNuxtConfig({
   alias: {
     // "~~": "/<rootDir>",
     // "@@": "/<rootDir>",
-    // "~": "/<rootDir>",
-    // "@": "/<rootDir>",
-    // "assets": "/<rootDir>/assets",
-    // "public": "/<rootDir>/public"
+    "~": "/",
+    "@": "/",
+    "assets": "/",
+    "public": "/public"
   },
   app: {
     head: {
@@ -34,7 +34,7 @@ export default defineNuxtConfig({
     css: {
       preprocessorOptions: {
         scss: {
-          additionalData: '@use "@/assets/index.scss" as *;'
+          additionalData: '@use "assets/index.scss" as *;'
         }
       }
     }
