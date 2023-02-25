@@ -5,7 +5,7 @@ export default defineNuxtConfig({
     // "@@": "/<rootDir>",
     "~": "",
     "@": "",
-    "assets": "/",
+    "assets": "/assets/",
     "public": "/public"
   },
   app: {

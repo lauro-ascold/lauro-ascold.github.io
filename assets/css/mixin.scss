@@ -117,3 +117,9 @@
   height: $size;
   width: $size;
 }
+
+@mixin fnPageDefaultStyle($bg-color: #f6f6f6) {
+  background: $bg-color;
+  width: 100vw;
+  height: 100%;
+}

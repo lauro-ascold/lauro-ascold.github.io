@@ -7,7 +7,10 @@
 <!--        </li>-->
 <!--      </ul>-->
 <!--    </section>-->
-    <van-button type="primary" @click="handleHref('welcome')">基础用法</van-button>
+    <nuxt-link to="/diagram">
+      <van-button type="primary">diagram</van-button>
+    </nuxt-link>
+    <van-button type="primary" @click="handleHref('welcome')">welcome</van-button>
 <!--    <van-sticky>-->
 <!--    </van-sticky>-->
 
@@ -33,12 +36,12 @@ function increment() {
   count.value++
 }
 function handleHref(aim = '') {
-  console.log({aim});
+  // console.log({aim});
   router.push({
-    name: 'welcome',
-    query: {
-      id: 123
-    }
+    name: aim,
+    // query: {
+    //   id: 123
+    // }
   })
 }
 
